@@ -28,7 +28,7 @@
 									<!--<li><a href="left-sidebar.html">Left Sidebar</a></li>-->
 									<!--<li><a href="right-sidebar.html">Right Sidebar</a></li>-->
 									<!--<li><a href="no-sidebar.html">No Sidebar</a></li>-->
-									<li><a href="contact.php">Contact</a></li>
+									<li><a href="contact.html">Contact</a></li>
 									<!--<li class="submenu">
 										<a href="#">Submenu</a>
 										<ul>
@@ -60,19 +60,18 @@
 
 							<!-- Content -->
 							<?php
-     							$name = $_POST['name'];
-     							$email = $_POST['email'];
-     							$subject = $_POST['subject'];
-     							$message = $_POST['message'];
-     							$from = 'From: <the-email-that-you-want-it-to-come-from>';
-     							$to = 'kakolui@gmail.com';
-     							$email_subject = 'New Contact Form Submission!';
+     $name = $_POST['name'];
+     $email = $_POST['email'];
+     $subject = $_POST['subject'];
+     $message = $_POST['message'];                                                   
+     $from = 'From: kakolui@gmail.com';
+     $to = 'kakolui@gmail.com';
+     $email_subject = 'New Contact Form Submission!';
      
-     							$body = "Name: $name\nE-mail: $email\nSubject: $subject\n\nThe message is below:\n$message";;
-							?>
-
+     $body = "Name: $name\nE-mail: $email\nSubject: $subject\n\nThe message is below:\n$message";;
+?>
 								<div class="content">
-									<form method = "post" action = "contact.php">
+									<form method = "post" action = "#">
 										<div class="row gtr-50">
 											<div class="col-6 col-12-mobile">
 												<input type="text" name="name" placeholder="Name" />
@@ -120,6 +119,22 @@
 				</footer>
 
 		</div>
+
+<?php
+    if (isset($_POST['submitbtn']))
+    {
+        if (mail($to, $email_subject, $body, $from))
+        {
+            echo "<font color=\"green\"><p>Your message has been sent!</p></font>";
+        }
+        else
+        {
+        echo "<font color=\"red\"><p>Your message sending has failed! Please manually email (your email)!</p></font>";
+        }
+    }
+?>
+
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
