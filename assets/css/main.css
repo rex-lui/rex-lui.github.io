@@ -2037,6 +2037,29 @@ input, select, textarea {
 				.button.primary:hover:active {
 					background-color: #b73541;
 				}
+		button.visualization,
+		.button.visualization {
+			background-color: #2950c3;
+			box-shadow: none;
+			color: #ffffff !important;
+		}
+		
+			input[type="submit"].visualization:hover,
+			input[type="reset"].visualization:hover,
+			input[type="button"].visualization:hover,
+			button.visualization:hover,
+			.button.visualization:hover {
+				background-color: #3a58b3;
+				box-shadow: none;
+			}
+		
+				input[type="submit"].visualization:hover:active,
+				input[type="reset"].visualization:hover:active,
+				input[type="button"].visualization:hover:active,
+				button.visualization:hover:active,
+				.button.visualization:hover:active {
+					background-color: #2950c3;
+				}
 
 /* Form */
 
