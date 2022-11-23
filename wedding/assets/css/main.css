@@ -1958,14 +1958,14 @@ input, select, textarea {
 		}
 
 			.main.style1 h2 {
-				font-size: 8.25em;
+				font-size: 3em;
 				font-family: 'Great Vibes', cursive;
 				letter-spacing: 0.1em;
-				line-height: 1.75em;
+				line-height: 1em;
 			}
 
 			.main.style1 h3 {
-				font-size: 2.75em;
+				font-size: 1em;
 				font-family: 'Great Vibes', cursive;
 				letter-spacing: 0.1em;
 			}
@@ -1981,6 +1981,8 @@ input, select, textarea {
 				transform: translateZ(0);
 				opacity: 1.0;
 				margin: 0;
+				position: relative;
+				top: -4em;
 			}
 
 			.main.style1.inactive > .content {
