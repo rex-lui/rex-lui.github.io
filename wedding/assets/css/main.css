@@ -1972,6 +1972,12 @@ input, select, textarea {
 				letter-spacing: 0.1em;
 			}
 
+			.main.style1 p {
+				font-family: 'Geneva';
+				letter-spacing: 0.1em;
+				line-height: 1em;
+			}
+
 			.main.style1 > .content {
 				-moz-transition: opacity 1s ease;
 				-webkit-transition: opacity 1s ease;
