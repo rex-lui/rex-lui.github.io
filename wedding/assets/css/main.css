@@ -607,7 +607,9 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-top: solid 1px #e5e6e7;
+		width: 50%;
 	}
+
 
 	blockquote {
 		border-left: solid 0.5em #e5e6e7;
