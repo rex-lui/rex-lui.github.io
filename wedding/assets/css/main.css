@@ -2353,3 +2353,63 @@ input, select, textarea {
 			}
 
 		}
+
+/* Timeline */
+
+	/* Timeline Container */
+	.timeline {
+	  background: var(--primary-color);
+	  margin: 20px auto;
+	  padding: 20px;
+	}
+	
+	/* Outer Layer with the timeline border */
+	.outer {
+	  border-left: 2px solid #333;
+	}
+	
+	/* Card container */
+	.card {
+	  position: relative;
+	  margin: 0 0 20px 20px;
+	  padding: 10px;
+	  background: white;
+	  color: gray;
+	  border-radius: 8px;
+	  max-width: 400px;
+	  border: 1px solid #39454b;
+	}
+	
+	/* Information about the timeline */
+	.info {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 10px;
+	}
+	
+	/* Title of the card */
+	.title {
+	  text-align: left;
+	  color: #39454b;
+	  position: relative;
+	  letter-spacing: 0.025em;
+	  display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+	}
+	
+	/* Timeline dot  */
+	.title::before {
+	  margin： 0；
+	  padding: 0;
+	  content: "";
+	  position: absolute;
+	  width: 20px;
+	  height: 20px;
+	  background: white;
+	  border-radius: 999px;
+	  left: -41px;
+	  border: 3px solid #39454b;
+	}
