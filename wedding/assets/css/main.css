@@ -2284,9 +2284,9 @@ input, select, textarea {
 
 		}
 
-/* Intro */
+/* Cover */
 
-	#intro {
+	#cover {
 		background: url("images/overlay.png"), url("images/cover.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
@@ -2294,19 +2294,19 @@ input, select, textarea {
 		background-repeat: repeat, no-repeat;
 	}
 
-/* One */
+/* When */
 
-	#one {
-		background: url("images/overlay.png"), url("images/one.jpg");
+	#when {
+		background: url("images/overlay.png"), url("images/when.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 
-/* Two */
+/* Where */
 
-	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
+	#where {
+		background: url("images/overlay.png"), url("images/where.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
