@@ -37,6 +37,9 @@ body {
 ol, ul {
 	list-style: none;
 }
+	ul.circle {
+		list-style: circle;
+	}
 
 blockquote, q {
 	quotes: none;
@@ -2307,6 +2310,15 @@ input, select, textarea {
 
 	#where {
 		background: url("images/overlay.png"), url("images/where.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Notice */
+
+	#notice {
+		background: url("images/overlay.png"), url("images/notice.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
